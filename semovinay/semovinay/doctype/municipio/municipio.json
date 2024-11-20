@@ -1,0 +1,81 @@
+{
+ "_comments": "[]",
+ "_liked_by": "[]",
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:{id_estado}{id_municipio}",
+ "creation": "2023-05-29 13:40:12.280659",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id_estado",
+  "nombre_estado",
+  "id_municipio",
+  "nombre_municipio"
+ ],
+ "fields": [
+  {
+   "fieldname": "id_estado",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Estado",
+   "options": "Estado",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nombre_municipio",
+   "fieldtype": "Data",
+   "label": "Nombre del Municipio",
+   "length": 50,
+   "reqd": 1
+  },
+  {
+   "fieldname": "id_municipio",
+   "fieldtype": "Data",
+   "label": "Clave del Municipio",
+   "length": 3,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "id_estado.nombre_estado",
+   "fieldname": "nombre_estado",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nombre del Estado",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-30 23:02:04.137763",
+ "modified_by": "Administrator",
+ "module": "SEMOVINAY",
+ "name": "Municipio",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "nombre_municipio, nombre_estado",
+ "show_title_field_in_link": 1,
+ "sort_field": "id_municipio",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "nombre_municipio",
+ "translated_doctype": 1
+}

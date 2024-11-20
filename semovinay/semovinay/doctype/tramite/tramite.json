@@ -1,0 +1,1150 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-24 13:46:31.782404",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tb1",
+  "formato_unico",
+  "sc1",
+  "fecha",
+  "sc2",
+  "tramite",
+  "sc3",
+  "status",
+  "ss1",
+  "permisionario",
+  "ss2",
+  "rfc",
+  "sc4",
+  "tipo_persona",
+  "sc5",
+  "curp",
+  "sc6",
+  "genero",
+  "ss3",
+  "razon_social",
+  "sc7",
+  "nombre_completo",
+  "ss4",
+  "representante",
+  "ss5",
+  "nombre",
+  "sc8",
+  "apellido_paterno",
+  "sc9",
+  "apellido_materno",
+  "sc10",
+  "estatus",
+  "ss6",
+  "correo_electronico",
+  "sc12",
+  "telefono_fijo",
+  "sc13",
+  "extension",
+  "sc14",
+  "telefono_movil",
+  "ss7",
+  "tipo_identificacion",
+  "sc15",
+  "clave_identificacion",
+  "sc16",
+  "ss8",
+  "sc17",
+  "tipo_vialidad",
+  "sc18",
+  "nombre_vialidad",
+  "sc19",
+  "numero_exterior",
+  "sc20",
+  "numero_interior",
+  "sc21",
+  "inciso",
+  "ss9",
+  "entre_calle1",
+  "sc22",
+  "entre_calle2",
+  "sc23",
+  "referencia",
+  "sc24",
+  "codigo_postal",
+  "ss10",
+  "sc25",
+  "estado",
+  "sc26",
+  "municipio",
+  "sc27",
+  "nombre_asentamiento",
+  "sc28",
+  "colonia",
+  "tb3",
+  "numero_economico",
+  "sc62",
+  "numero_economico_anterior",
+  "sc30",
+  "numero_engomado",
+  "ss21",
+  "permisionario_original",
+  "sc60",
+  "vehiculo_original",
+  "ss11",
+  "municipio_asignado",
+  "sc31",
+  "modalidad",
+  "sc32",
+  "categoria_modalidad",
+  "sc61",
+  "sitio",
+  "ruta",
+  "ss12",
+  "pertenece_organizacion",
+  "sc33",
+  "gestor_propietario",
+  "organizacion",
+  "sc35",
+  "presidente",
+  "sc34",
+  "gestor_organizacion",
+  "tb2",
+  "ss13",
+  "aseguradora",
+  "sc36",
+  "poliza",
+  "sc37",
+  "fecha_vigencia_inicial",
+  "sc38",
+  "fecha_vigencia_final",
+  "ss14",
+  "servicio",
+  "sc39",
+  "serie",
+  "sc40",
+  "modelo_anio",
+  "sc41",
+  "placa",
+  "alert_camion",
+  "alert_microbus",
+  "alert_automovil",
+  "sc42",
+  "clave_vehicular",
+  "ss15",
+  "marca",
+  "sc43",
+  "modelo",
+  "sc44",
+  "version",
+  "ss16",
+  "clase",
+  "sc45",
+  "tipo",
+  "sc46",
+  "combustible",
+  "sc47",
+  "cilindros",
+  "sc48",
+  "puertas",
+  "ss17",
+  "color_principal",
+  "sc49",
+  "color_secundario",
+  "sc50",
+  "numero_pasajeros",
+  "sc51",
+  "unidad_carga",
+  "sc52",
+  "capacidad_carga",
+  "ss18",
+  "numero_motor",
+  "sc53",
+  "factura_cambio_motor",
+  "sc54",
+  "nuevo_numero_motor",
+  "sc55",
+  "folio_repuve",
+  "sc29",
+  "fecha_folio_repuve",
+  "ss19",
+  "tipo_documento",
+  "sc56",
+  "fecha_documento",
+  "sc57",
+  "clave_documento",
+  "ss20",
+  "fecha_pago",
+  "sc58",
+  "num_ult_recibo",
+  "sc59",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha"
+  },
+  {
+   "fieldname": "serie",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Serie",
+   "length": 17,
+   "reqd": 1
+  },
+  {
+   "fieldname": "tipo_persona",
+   "fieldtype": "Select",
+   "label": "Tipo de persona",
+   "options": "F\u00cdSICA\nMORAL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rfc",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Permisionario (RFC)",
+   "length": 13,
+   "options": "Propietario",
+   "reqd": 1
+  },
+  {
+   "fieldname": "curp",
+   "fieldtype": "Data",
+   "label": "CURP",
+   "length": 18
+  },
+  {
+   "fieldname": "genero",
+   "fieldtype": "Select",
+   "label": "G\u00e9nero",
+   "options": "HOMBRE\nMUJER\nNO BINARIO"
+  },
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "label": "Nombre",
+   "length": 20,
+   "reqd": 1
+  },
+  {
+   "fieldname": "apellido_paterno",
+   "fieldtype": "Data",
+   "label": "Apellido paterno",
+   "length": 20,
+   "reqd": 1
+  },
+  {
+   "fieldname": "apellido_materno",
+   "fieldtype": "Data",
+   "label": "Apellido materno",
+   "length": 20,
+   "reqd": 1
+  },
+  {
+   "fieldname": "razon_social",
+   "fieldtype": "Data",
+   "label": "Raz\u00f3n social"
+  },
+  {
+   "fieldname": "tipo_vialidad",
+   "fieldtype": "Select",
+   "label": "Tipo vialidad",
+   "options": "CALLE\nAVENIDA\nBOULEVARD\nANDADOR\nPROLONGACI\u00d3N\nCALZADA\nPRIVADA\nPERIF\u00c9RICO\nLIBRAMIENTO\nAUTOPISTA\nCARRETERA",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nombre_vialidad",
+   "fieldtype": "Data",
+   "label": "Nombre vialidad",
+   "length": 30,
+   "reqd": 1
+  },
+  {
+   "fieldname": "numero_exterior",
+   "fieldtype": "Data",
+   "label": "N\u00famero exterior",
+   "length": 6,
+   "reqd": 1
+  },
+  {
+   "fieldname": "numero_interior",
+   "fieldtype": "Data",
+   "label": "N\u00famero interior",
+   "length": 8
+  },
+  {
+   "fieldname": "inciso",
+   "fieldtype": "Data",
+   "label": "Inciso",
+   "length": 8
+  },
+  {
+   "fieldname": "entre_calle1",
+   "fieldtype": "Data",
+   "label": "Entre calle 1",
+   "length": 30
+  },
+  {
+   "fieldname": "entre_calle2",
+   "fieldtype": "Data",
+   "label": "Entre calle 2",
+   "length": 30
+  },
+  {
+   "fieldname": "referencia",
+   "fieldtype": "Data",
+   "label": "Referencia",
+   "length": 200
+  },
+  {
+   "fieldname": "codigo_postal",
+   "fieldtype": "Link",
+   "label": "C\u00f3digo postal",
+   "options": "Asentamiento",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "codigo_postal.nombre_estado",
+   "fieldname": "estado",
+   "fieldtype": "Data",
+   "label": "Estado",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "codigo_postal.nombre_municipio",
+   "fieldname": "municipio",
+   "fieldtype": "Data",
+   "label": "Municipio",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "codigo_postal.nombre_asentamiento",
+   "fieldname": "nombre_asentamiento",
+   "fieldtype": "Data",
+   "label": "Nombre asentamiento",
+   "read_only": 1
+  },
+  {
+   "fieldname": "correo_electronico",
+   "fieldtype": "Data",
+   "label": "Correo electr\u00f3nico",
+   "options": "Email"
+  },
+  {
+   "fieldname": "telefono_fijo",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono fijo",
+   "length": 10
+  },
+  {
+   "fieldname": "extension",
+   "fieldtype": "Data",
+   "label": "Extensi\u00f3n"
+  },
+  {
+   "fieldname": "telefono_movil",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono m\u00f3vil",
+   "length": 10
+  },
+  {
+   "fieldname": "clave_identificacion",
+   "fieldtype": "Data",
+   "label": "Clave de identificaci\u00f3n",
+   "length": 20,
+   "reqd": 1
+  },
+  {
+   "default": "Capturado",
+   "fieldname": "status",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Estatus",
+   "options": "Estado tramite"
+  },
+  {
+   "fieldname": "tipo_identificacion",
+   "fieldtype": "Select",
+   "label": "Tipo identificaci\u00f3n",
+   "options": "CREDENCIAL INE\nPASAPORTE\nCEDULA PROFESIONAL\nACTA CONSTITUTIVA/INE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nombre_completo",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Nombre Completo",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "codigo_postal.colonia",
+   "fieldname": "colonia",
+   "fieldtype": "Data",
+   "label": "Colonia",
+   "read_only": 1
+  },
+  {
+   "fieldname": "representante",
+   "fieldtype": "HTML",
+   "options": "<div style=\"text-align: lefth; color: #cca352!important;\"><strong>Datos del representante</strong></div>"
+  },
+  {
+   "fieldname": "sc2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "modelo_anio",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Modelo a\u00f1o",
+   "length": 4,
+   "reqd": 1
+  },
+  {
+   "fieldname": "placa",
+   "fieldtype": "Data",
+   "label": "Placa"
+  },
+  {
+   "description": "<small><p class=\"text-secondary bg-light\">[Opciones de b\u00fasqueda para la <span class=\"text-dark\"><strong>Clave vehicular</strong></span>: Marca, Modelo y Versi\u00f3n]</p></small>",
+   "fieldname": "clave_vehicular",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Clave vehicular",
+   "options": "Clave vehicular",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "clave_vehicular.modelo",
+   "fieldname": "modelo",
+   "fieldtype": "Data",
+   "label": "Modelo (L\u00ednea)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "clave_vehicular.version",
+   "fieldname": "version",
+   "fieldtype": "Data",
+   "label": "Versi\u00f3n",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "clase",
+   "fieldtype": "Select",
+   "label": "Clase",
+   "options": "AUTOM\u00d3VIL\nCAMI\u00d3N\nMICROBUS",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "tipo",
+   "fieldtype": "Select",
+   "label": "Tipo",
+   "options": "SEDAN\nSEDANETA\nCOUPE\nGUAYIN\nPICK UP\nREDILAS\nESTACAS\nVOLTEO\nPENAL\nPLATAFORMA\nGRUA\nTANDEN\nPIPA\nOMNIBUS\nAUTOB\u00daS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "color_principal",
+   "fieldtype": "Link",
+   "label": "Color principal",
+   "options": "Color vehiculo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "color_secundario",
+   "fieldtype": "Link",
+   "label": "Color secundario",
+   "options": "Color vehiculo"
+  },
+  {
+   "fieldname": "numero_motor",
+   "fieldtype": "Data",
+   "label": "N\u00famero de motor",
+   "length": 25,
+   "reqd": 1
+  },
+  {
+   "fieldname": "cilindros",
+   "fieldtype": "Select",
+   "label": "Cilindros",
+   "options": "3\n4\n5\n6\n8"
+  },
+  {
+   "fieldname": "numero_pasajeros",
+   "fieldtype": "Int",
+   "label": "N\u00famero de pasajeros",
+   "length": 3
+  },
+  {
+   "fieldname": "unidad_carga",
+   "fieldtype": "Select",
+   "label": "Unidad de carga",
+   "options": "PASAJEROS\nKILOGRAMOS\nTONELADAS\nLITROS"
+  },
+  {
+   "fieldname": "capacidad_carga",
+   "fieldtype": "Int",
+   "label": "Capacidad de carga"
+  },
+  {
+   "fieldname": "puertas",
+   "fieldtype": "Select",
+   "label": "Puertas",
+   "options": "2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "tipo_documento",
+   "fieldtype": "Select",
+   "label": "Tipo documento",
+   "options": "FACTURA DE ORIGEN\nCARTA FACTURA\nREFACTURACI\u00d3N",
+   "reqd": 1
+  },
+  {
+   "fieldname": "clave_documento",
+   "fieldtype": "Data",
+   "label": "Clave documento (Folio)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_documento",
+   "fieldtype": "Date",
+   "label": "Fecha documento",
+   "reqd": 1
+  },
+  {
+   "fieldname": "combustible",
+   "fieldtype": "Select",
+   "label": "Combustible",
+   "options": "GASOLINA\nDIESEL\nGAS L.P.\nEL\u00c9CTRICO\nH\u00cdBRIDOS"
+  },
+  {
+   "fieldname": "aseguradora",
+   "fieldtype": "Link",
+   "label": "Aseguradora",
+   "options": "Aseguradora",
+   "reqd": 1
+  },
+  {
+   "fieldname": "poliza",
+   "fieldtype": "Data",
+   "label": "No. p\u00f3liza",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_vigencia_inicial",
+   "fieldtype": "Date",
+   "label": "Fecha vigencia inicial",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_vigencia_final",
+   "fieldtype": "Date",
+   "label": "Fecha vigencia final",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "clave_vehicular.empresa",
+   "fieldname": "marca",
+   "fieldtype": "Data",
+   "label": "Empresa (Marca)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "servicio",
+   "fieldtype": "Select",
+   "label": "Servicio",
+   "options": "P\u00daBLICO\nPRIVADO",
+   "read_only": 1
+  },
+  {
+   "fieldname": "alert_automovil",
+   "fieldtype": "HTML",
+   "options": "<small><p class=\"text-secondary bg-light\">[Nomenclatura para la <strong><span class=\"text-dark\"> Placa</span></strong> del tipo de clase<span class=\"text-dark\"><strong> AUTOM\u00d3VIL</strong></span> es la siguiente:<br><span class=\"text-success\">10-00-MDA/99-99-MJZ \u00f3 A-001-MDA/A-999-MDK</span>]</p></small>"
+  },
+  {
+   "fieldname": "alert_camion",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "options": "<small><p class=\"text-secondary bg-light\">[Nomenclatura para la<strong><span class=\"text-dark\"> Placa </span></strong>del tipo de clase <strong><span class=\"text-dark\">CAMI\u00d3N</span></strong> es la siguiente:<br><span class=\"text-success\"> 1-PAA-100/9-RFZ-999 \u00f3 1-PFA-01A/2-PFA-99A</span>]</p></small>"
+  },
+  {
+   "fieldname": "alert_microbus",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "options": "<small><p class=\"text-secondary bg-light\">[Nomenclatura para la <strong><span class=\"text-dark\"> Placa </span></strong>del tipo de clase<span class=\"text-dark\"><strong> MICROBUS</strong></span> es la siguiente:<br><span class=\"text-success\">149-000-P/730-999-R \u00f3 A-7300-P/A-74499-P</span>]</p></small>"
+  },
+  {
+   "fieldname": "ss3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ss4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fecha_pago",
+   "fieldtype": "Date",
+   "label": "Fecha \u00faltimo pago"
+  },
+  {
+   "fieldname": "num_ult_recibo",
+   "fieldtype": "Int",
+   "label": "No. recibo de pago",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "tb1",
+   "fieldtype": "Tab Break",
+   "label": "Permisionario"
+  },
+  {
+   "fieldname": "tb2",
+   "fieldtype": "Tab Break",
+   "label": "Veh\u00edculo Asignado"
+  },
+  {
+   "fieldname": "folio_repuve",
+   "fieldtype": "Data",
+   "label": "Folio REPUVE"
+  },
+  {
+   "fieldname": "factura_cambio_motor",
+   "fieldtype": "Data",
+   "label": "N\u00famero factura cambio de motor"
+  },
+  {
+   "fieldname": "ss6",
+   "fieldtype": "Section Break",
+   "label": "Datos de Contacto"
+  },
+  {
+   "fieldname": "sc1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ss5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ss7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ss9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nuevo_numero_motor",
+   "fieldtype": "Data",
+   "label": "Nuevo n\u00famero de motor",
+   "length": 25
+  },
+  {
+   "fieldname": "sc31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tramite",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tr\u00e1mite",
+   "options": "Tipo de tramite",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Tramite"
+  },
+  {
+   "fieldname": "formato_unico",
+   "fieldtype": "Link",
+   "label": "Folio formato \u00fanico",
+   "options": "Formato unico",
+   "unique": 1
+  },
+  {
+   "fieldname": "ss2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ss11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ss13",
+   "fieldtype": "Section Break",
+   "label": "Datos aseguradora"
+  },
+  {
+   "fieldname": "ss14",
+   "fieldtype": "Section Break",
+   "label": "Datos del veh\u00edculo"
+  },
+  {
+   "fieldname": "ss17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ss20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc38",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc41",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc48",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc49",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "numero_economico",
+   "fieldtype": "Link",
+   "label": "N\u00famero econ\u00f3mico",
+   "options": "Permiso"
+  },
+  {
+   "fieldname": "numero_engomado",
+   "fieldtype": "Data",
+   "label": "N\u00famero de engomado"
+  },
+  {
+   "fieldname": "municipio_asignado",
+   "fieldtype": "Link",
+   "label": "Municipio asignado",
+   "options": "Municipio"
+  },
+  {
+   "fieldname": "modalidad",
+   "fieldtype": "Link",
+   "label": "Modalidad del permiso",
+   "options": "Modalidad permiso"
+  },
+  {
+   "fetch_from": "modalidad.categoria",
+   "fieldname": "categoria_modalidad",
+   "fieldtype": "Data",
+   "label": "Categor\u00eda de la modalidad"
+  },
+  {
+   "fieldname": "tb3",
+   "fieldtype": "Tab Break",
+   "label": "Permiso"
+  },
+  {
+   "default": "0",
+   "fieldname": "pertenece_organizacion",
+   "fieldtype": "Check",
+   "label": "\u00bfPertenece a una organizaci\u00f3n?"
+  },
+  {
+   "fieldname": "organizacion",
+   "fieldtype": "Link",
+   "label": "Organizaci\u00f3n",
+   "options": "Organizacion"
+  },
+  {
+   "fetch_from": "organizacion.presidente",
+   "fieldname": "presidente",
+   "fieldtype": "Data",
+   "label": "Nombre del representante de la organizaci\u00f3n"
+  },
+  {
+   "fieldname": "gestor_organizacion",
+   "fieldtype": "Link",
+   "label": "Gestor de la organizaci\u00f3n",
+   "options": "Gestores Organizacion"
+  },
+  {
+   "fieldname": "gestor_propietario",
+   "fieldtype": "Data",
+   "label": "Gestor propietario"
+  },
+  {
+   "fieldname": "sc50",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc52",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc53",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc54",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ss15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "estatus",
+   "fieldtype": "Select",
+   "label": "Estatus",
+   "options": "ACTIVO\nINACTIVO"
+  },
+  {
+   "fieldname": "permisionario",
+   "fieldtype": "HTML",
+   "options": "<div style=\"text-align: lefth; color: #cca352!important;\"><strong>Datos del Permisionario</strong></div>"
+  },
+  {
+   "fieldname": "ss8",
+   "fieldtype": "Section Break",
+   "label": "Domicilio Particular"
+  },
+  {
+   "fieldname": "sc23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ss12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ss16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ss18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ss19",
+   "fieldtype": "Section Break",
+   "label": "Datos Factura"
+  },
+  {
+   "fieldname": "sc56",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc57",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc58",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc59",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ss1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc43",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc60",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "permisionario_original",
+   "fieldtype": "Link",
+   "label": "Permisionario original",
+   "options": "Propietario",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vehiculo_original",
+   "fieldtype": "Link",
+   "label": "Veh\u00edculo original",
+   "options": "Vehiculo",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ss10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ss21",
+   "fieldtype": "Section Break",
+   "label": "Datos originales del permiso"
+  },
+  {
+   "fieldname": "sc61",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sitio",
+   "fieldtype": "Link",
+   "label": "Sitio",
+   "options": "Sitio"
+  },
+  {
+   "fieldname": "ruta",
+   "fieldtype": "Link",
+   "label": "Ruta",
+   "options": "Ruta"
+  },
+  {
+   "fieldname": "sc29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fecha_folio_repuve",
+   "fieldtype": "Date",
+   "label": "Fecha folio repuve"
+  },
+  {
+   "fieldname": "sc62",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "numero_economico_anterior",
+   "fieldtype": "Data",
+   "label": "N\u00famero econ\u00f3mico anterior"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Formato unico",
+   "link_fieldname": "folio"
+  }
+ ],
+ "modified": "2024-03-15 13:13:29.546575",
+ "modified_by": "Administrator",
+ "module": "SEMOVINAY",
+ "name": "Tramite",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Light Blue",
+   "title": "Capturado"
+  },
+  {
+   "color": "Yellow",
+   "title": "En revisi\u00f3n"
+  },
+  {
+   "color": "Purple",
+   "title": "Devuelto"
+  },
+  {
+   "color": "Red",
+   "title": "Cancelado"
+  },
+  {
+   "color": "Gray",
+   "title": "En firmas"
+  },
+  {
+   "color": "Green",
+   "title": "Firmado"
+  },
+  {
+   "color": "Green",
+   "title": "Entregado"
+  },
+  {
+   "color": "Blue",
+   "title": "Pagado"
+  }
+ ],
+ "title_field": "formato_unico"
+}

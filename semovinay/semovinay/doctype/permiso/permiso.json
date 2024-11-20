@@ -1,0 +1,504 @@
+{
+ "actions": [],
+ "autoname": "field:numero_economico",
+ "creation": "2022-10-11 14:39:15.181601",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "seccion_generales",
+  "numero_economico_anterior",
+  "sc15",
+  "numero_economico",
+  "sc1",
+  "numero_engomado",
+  "sc2",
+  "municipio_asignado",
+  "salto_columna_1",
+  "a\u00f1o_ultimo_refrendo",
+  "sc16",
+  "fecha_ultimo_movimiento",
+  "sc14",
+  "tipo_tramite",
+  "ss5",
+  "modalidad",
+  "sc4",
+  "categoria_modalidad",
+  "sc13",
+  "clasificacion_permiso",
+  "sitio",
+  "ruta",
+  "modalidad_categoria",
+  "seccion_permisionario",
+  "permisionario",
+  "salto_columna_3",
+  "tipo_persona",
+  "sc3",
+  "rfc",
+  "ss9",
+  "curp",
+  "nombre_permisionario",
+  "razon_social",
+  "seccion_vehiculo",
+  "vehiculo",
+  "sc5",
+  "anio_modelo",
+  "sc6",
+  "placa",
+  "sc7",
+  "clave_vehicular",
+  "ss1",
+  "clasificacion",
+  "modelo",
+  "salto_columna_4",
+  "empresa",
+  "version",
+  "ss2",
+  "nombre_aseguradora",
+  "sc8",
+  "numero_poliza",
+  "seccion_otros",
+  "pertenece_organizacion",
+  "salto_columna_2",
+  "gestor_propietario",
+  "organizacion",
+  "sc9",
+  "presidente",
+  "ss3",
+  "oficio_alta",
+  "sc10",
+  "fecha_oficio",
+  "sc11",
+  "fecha_expedicion",
+  "ss4",
+  "funcionario",
+  "sc12",
+  "cargo_funcionario",
+  "estatus"
+ ],
+ "fields": [
+  {
+   "fieldname": "numero_economico",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "N\u00famero econ\u00f3mico",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "numero_economico_anterior",
+   "fieldtype": "Data",
+   "label": "N\u00famero econ\u00f3mico anterior"
+  },
+  {
+   "fieldname": "numero_engomado",
+   "fieldtype": "Data",
+   "label": "N\u00famero de engomado"
+  },
+  {
+   "fieldname": "modalidad",
+   "fieldtype": "Link",
+   "label": "Modalidad del permiso",
+   "options": "Modalidad permiso",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sitio",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Sitio",
+   "options": "Sitio"
+  },
+  {
+   "fieldname": "ruta",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Ruta",
+   "options": "Ruta"
+  },
+  {
+   "fieldname": "permisionario",
+   "fieldtype": "Link",
+   "label": "Permisionario",
+   "options": "Propietario",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehiculo",
+   "fieldtype": "Link",
+   "label": "Veh\u00edculo asignado",
+   "options": "Vehiculo",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "pertenece_organizacion",
+   "fieldtype": "Check",
+   "label": "\u00bfPertenece a una organizaci\u00f3n?"
+  },
+  {
+   "fieldname": "organizacion",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Organizaci\u00f3n",
+   "options": "Organizacion"
+  },
+  {
+   "fieldname": "oficio_alta",
+   "fieldtype": "Data",
+   "label": "N\u00famero de oficio de alta",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fecha_expedicion",
+   "fieldtype": "Date",
+   "label": "Fecha de expedici\u00f3n",
+   "read_only": 1
+  },
+  {
+   "fieldname": "funcionario",
+   "fieldtype": "Link",
+   "label": "Funcionario que autoriz\u00f3 el permiso",
+   "options": "Funcionario",
+   "read_only": 1
+  },
+  {
+   "fieldname": "seccion_generales",
+   "fieldtype": "Section Break",
+   "label": "Datos generales del permiso"
+  },
+  {
+   "fieldname": "seccion_permisionario",
+   "fieldtype": "Section Break",
+   "label": "Datos del permisionario"
+  },
+  {
+   "fieldname": "seccion_vehiculo",
+   "fieldtype": "Section Break",
+   "label": "Datos del veh\u00edculo asignado"
+  },
+  {
+   "fieldname": "seccion_otros",
+   "fieldtype": "Section Break",
+   "label": "Datos de organizaci\u00f3n y expedici\u00f3n"
+  },
+  {
+   "fieldname": "salto_columna_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "salto_columna_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "modalidad.categoria",
+   "fieldname": "categoria_modalidad",
+   "fieldtype": "Read Only",
+   "label": "Categor\u00eda de la modalidad",
+   "search_index": 1
+  },
+  {
+   "fetch_from": "permisionario.tipo_persona",
+   "fieldname": "tipo_persona",
+   "fieldtype": "Read Only",
+   "label": "Tipo de persona"
+  },
+  {
+   "fieldname": "salto_columna_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "permisionario.rfc",
+   "fieldname": "rfc",
+   "fieldtype": "Data",
+   "label": "RFC",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "permisionario.curp",
+   "fieldname": "curp",
+   "fieldtype": "Data",
+   "label": "CURP",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "funcionario.cargo",
+   "fieldname": "cargo_funcionario",
+   "fieldtype": "Read Only",
+   "label": "Cargo del funcionario"
+  },
+  {
+   "fetch_from": "vehiculo.modelo_anio",
+   "fieldname": "anio_modelo",
+   "fieldtype": "Data",
+   "label": "A\u00f1o modelo",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehiculo.placa",
+   "fieldname": "placa",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Placa",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehiculo.clave_vehicular",
+   "fieldname": "clave_vehicular",
+   "fieldtype": "Data",
+   "label": "Clave vehicular",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehiculo.clasificacion",
+   "fieldname": "clasificacion",
+   "fieldtype": "Data",
+   "label": "Clasificaci\u00f3n",
+   "read_only": 1
+  },
+  {
+   "fieldname": "salto_columna_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "vehiculo.marca",
+   "fieldname": "empresa",
+   "fieldtype": "Data",
+   "label": "Empresa",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehiculo.modelo",
+   "fieldname": "modelo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Modelo",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehiculo.version",
+   "fieldname": "version",
+   "fieldtype": "Data",
+   "label": "Versi\u00f3n",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehiculo.poliza",
+   "fieldname": "numero_poliza",
+   "fieldtype": "Data",
+   "label": "N\u00famero de p\u00f3liza",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehiculo.aseguradora",
+   "fieldname": "nombre_aseguradora",
+   "fieldtype": "Data",
+   "label": "Aseguradora",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "modalidad.modalidad_categoria",
+   "fieldname": "modalidad_categoria",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Modalidad y categor\u00eda"
+  },
+  {
+   "fetch_from": "permisionario.nombre_completo",
+   "fieldname": "nombre_permisionario",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Nombre del permisionario",
+   "read_only": 1
+  },
+  {
+   "fieldname": "municipio_asignado",
+   "fieldtype": "Link",
+   "label": "Municipio asignado",
+   "options": "Municipio",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "permisionario.razon_social",
+   "fieldname": "razon_social",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Razon Social",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fecha_oficio",
+   "fieldtype": "Date",
+   "label": "Fecha de oficio de alta",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gestor_propietario",
+   "fieldtype": "Data",
+   "label": "Gestor Propietario"
+  },
+  {
+   "fieldname": "sc1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ss1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ss2",
+   "fieldtype": "Section Break",
+   "is_virtual": 1,
+   "label": "Datos aseguradora"
+  },
+  {
+   "fieldname": "ss3",
+   "fieldtype": "Section Break",
+   "label": "Datos del oficio"
+  },
+  {
+   "fieldname": "sc9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ss4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ss9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "organizacion.presidente",
+   "fieldname": "presidente",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Presidente"
+  },
+  {
+   "fieldname": "sc15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "a\u00f1o_ultimo_refrendo",
+   "fieldtype": "Int",
+   "label": "A\u00f1o \u00faltimo refrendo"
+  },
+  {
+   "fieldname": "sc16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fecha_ultimo_movimiento",
+   "fieldtype": "Date",
+   "label": "Fecha \u00faltimo movimiento"
+  },
+  {
+   "fieldname": "sc14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tipo_tramite",
+   "fieldtype": "Link",
+   "label": "Tipo de tr\u00e1mite",
+   "options": "Tipo de tramite"
+  },
+  {
+   "fieldname": "ss5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "modalidad.clasificacion",
+   "fieldname": "clasificacion_permiso",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Clasificaci\u00f3n permiso",
+   "read_only": 1
+  },
+  {
+   "default": "Activo",
+   "fieldname": "estatus",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Estatus",
+   "options": "Activo\nSuspendido\nCancelado"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-13 13:19:48.111783",
+ "modified_by": "Administrator",
+ "module": "SEMOVINAY",
+ "name": "Permiso",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "numero_economico_anterior, placa,  rfc, nombre_permisionario",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "numero_economico",
+ "track_changes": 1,
+ "translated_doctype": 1
+}

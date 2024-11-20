@@ -1,0 +1,272 @@
+[
+ {
+  "codigo_hexadecimal": "#800080",
+  "color": "MORADO / P\u00daRPURA",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "P\u00daRPURA",
+  "modified": "2023-10-15 15:13:50.414721",
+  "name": "MORADO / P\u00daRPURA"
+ },
+ {
+  "codigo_hexadecimal": "#E0B0FF",
+  "color": "MALVA",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "P\u00daRPURA",
+  "modified": "2023-10-15 15:13:50.456005",
+  "name": "MALVA"
+ },
+ {
+  "codigo_hexadecimal": "#C9A0DC",
+  "color": "LAVANDA",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "P\u00daRPURA",
+  "modified": "2023-10-15 15:13:50.467692",
+  "name": "LAVANDA"
+ },
+ {
+  "codigo_hexadecimal": "#800000",
+  "color": "BORGO\u0143A / GRANATE",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "P\u00daRPURA",
+  "modified": "2023-10-15 15:13:50.479314",
+  "name": "BORGO\u0143A / GRANATE"
+ },
+ {
+  "codigo_hexadecimal": "#9966CC",
+  "color": "AMATISTA",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "P\u00daRPURA",
+  "modified": "2023-10-15 15:13:50.490099",
+  "name": "AMATISTA"
+ },
+ {
+  "codigo_hexadecimal": "#FFFF00",
+  "color": "AMARILLO",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "ROJO Y AMARILLO",
+  "modified": "2023-10-15 15:13:50.499526",
+  "name": "AMARILLO"
+ },
+ {
+  "codigo_hexadecimal": "#FE0000",
+  "color": "ROJO",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "ROJO Y AMARILLO",
+  "modified": "2023-10-15 15:13:50.509537",
+  "name": "ROJO"
+ },
+ {
+  "codigo_hexadecimal": "#FFC0CB",
+  "color": "ROSA",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "ROJO Y AMARILLO",
+  "modified": "2023-10-15 15:13:50.519229",
+  "name": "ROSA"
+ },
+ {
+  "codigo_hexadecimal": "#FF7F00",
+  "color": "NARANJA",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "ROJO Y AMARILLO",
+  "modified": "2023-10-15 15:13:50.528562",
+  "name": "NARANJA"
+ },
+ {
+  "codigo_hexadecimal": "#FFD700",
+  "color": "ORO",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "MET\u00c1LICO",
+  "modified": "2023-10-15 15:13:50.539315",
+  "name": "ORO"
+ },
+ {
+  "codigo_hexadecimal": "#B87333",
+  "color": "COBRE",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "MET\u00c1LICO",
+  "modified": "2023-10-15 15:13:50.549958",
+  "name": "COBRE"
+ },
+ {
+  "codigo_hexadecimal": "#E0DFDB",
+  "color": "CROMO / ACERO INOXIDABLE",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "MET\u00c1LICO",
+  "modified": "2023-10-15 15:13:50.559699",
+  "name": "CROMO / ACERO INOXIDABLE"
+ },
+ {
+  "codigo_hexadecimal": "#CD7F32",
+  "color": "BRONCE",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "MET\u00c1LICO",
+  "modified": "2023-10-15 15:13:50.569015",
+  "name": "BRONCE"
+ },
+ {
+  "codigo_hexadecimal": "#C0C0C0",
+  "color": "ALUMINIO / PLATA",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "MET\u00c1LICO",
+  "modified": "2023-10-15 15:13:50.581055",
+  "name": "ALUMINIO / PLATA"
+ },
+ {
+  "codigo_hexadecimal": "#40E0D0",
+  "color": "TURQUESA",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "AZUL Y VERDE",
+  "modified": "2023-10-15 15:13:50.590587",
+  "name": "TURQUESA"
+ },
+ {
+  "codigo_hexadecimal": "#008080",
+  "color": "VERDE AZULADO",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "AZUL Y VERDE",
+  "modified": "2023-10-15 15:13:50.600143",
+  "name": "VERDE AZULADO"
+ },
+ {
+  "codigo_hexadecimal": "#90EE90",
+  "color": "VERDE CLARO",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "AZUL Y VERDE",
+  "modified": "2023-10-15 15:13:50.609608",
+  "name": "VERDE CLARO"
+ },
+ {
+  "codigo_hexadecimal": "#006400",
+  "color": "VERDE OSCURO",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "AZUL Y VERDE",
+  "modified": "2023-10-15 15:13:50.619063",
+  "name": "VERDE OSCURO"
+ },
+ {
+  "codigo_hexadecimal": "#008000",
+  "color": "VERDE",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "AZUL Y VERDE",
+  "modified": "2023-10-15 15:13:50.628091",
+  "name": "VERDE"
+ },
+ {
+  "codigo_hexadecimal": "#ADD8E6",
+  "color": "AZUL CLARO",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "AZUL Y VERDE",
+  "modified": "2023-10-15 15:13:50.637536",
+  "name": "AZUL CLARO"
+ },
+ {
+  "codigo_hexadecimal": "#00008B",
+  "color": "AZUL OSCURO",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "AZUL Y VERDE",
+  "modified": "2023-10-15 15:13:50.647189",
+  "name": "AZUL OSCURO"
+ },
+ {
+  "codigo_hexadecimal": "#0000FF",
+  "color": "AZUL",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "AZUL Y VERDE",
+  "modified": "2023-10-15 15:13:50.656892",
+  "name": "AZUL"
+ },
+ {
+  "codigo_hexadecimal": "#483C32",
+  "color": "GRIS PARDO",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "CAF\u00c9",
+  "modified": "2023-10-15 15:13:50.666752",
+  "name": "GRIS PARDO"
+ },
+ {
+  "codigo_hexadecimal": "#D2B48C",
+  "color": "CAF\u00c9 CLARO",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "CAF\u00c9",
+  "modified": "2023-10-15 15:13:50.677069",
+  "name": "CAF\u00c9 CLARO"
+ },
+ {
+  "codigo_hexadecimal": "#964B00",
+  "color": "CAF\u00c9",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "CAF\u00c9",
+  "modified": "2023-10-15 15:13:50.686653",
+  "name": "CAF\u00c9"
+ },
+ {
+  "codigo_hexadecimal": "#F5F5DC",
+  "color": "BEIGE",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "CAF\u00c9",
+  "modified": "2023-10-15 15:13:50.696139",
+  "name": "BEIGE"
+ },
+ {
+  "codigo_hexadecimal": "#FFFFFF",
+  "color": "BLANCO",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "BLANCO Y NEGRO",
+  "modified": "2023-10-15 15:13:50.705577",
+  "name": "BLANCO"
+ },
+ {
+  "codigo_hexadecimal": "#808080",
+  "color": "GRIS",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "BLANCO Y NEGRO",
+  "modified": "2023-10-15 15:13:50.715315",
+  "name": "GRIS"
+ },
+ {
+  "codigo_hexadecimal": "#FFFDD0",
+  "color": "CREMA / MARFIL",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "BLANCO Y NEGRO",
+  "modified": "2023-10-15 15:13:50.732743",
+  "name": "CREMA / MARFIL"
+ },
+ {
+  "codigo_hexadecimal": "#000000",
+  "color": "NEGRO",
+  "docstatus": 0,
+  "doctype": "Color vehiculo",
+  "grupo": "BLANCO Y NEGRO",
+  "modified": "2023-10-15 15:13:50.742726",
+  "name": "NEGRO"
+ }
+]

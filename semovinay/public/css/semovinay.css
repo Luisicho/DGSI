@@ -1,0 +1,51 @@
+.page-container{
+    background-color: #7a797338 !important
+}
+
+.layout-side-section {
+    background: #d6c8bb82  !important;
+}
+.page-head{
+    background: #8f1448  !important;
+}
+
+.sidebar-item-label {
+    color: #ffc107f2 !important;
+}
+
+.section-head, .form-dashboard-section .section-head {
+    color: #cca352!important;
+}
+
+h3 {
+    color: #d6ac58!important;
+    font-weight: bold!important;
+}
+.h4, h4, a {
+    color: #7c1414c2!important;
+    font-weight: bold!important;
+}
+.sidebar-item-label {
+    color: #7c1414c2 !important;
+}
+
+.widget .widget-head .widget-label .widget-title, .sidebar-label{
+    color: #8f1448 !important;
+    font-weight: bold!important;
+}
+.control-label {
+    color: #7c1414!important;
+    font-weight: bold!important;
+}
+.btn.btn-primary, div#driver-popover-item .driver-popover-footer button.btn-primary, div#driver-popover-item .driver-popover-footer button.driver-next-btn {
+    background-color: #e8c47c!important;
+    color:  #7c1414!important;   
+}
+
+.like-disabled-input {
+    color: #607d8b;
+}
+.form-section.card-section {
+    border-bottom: 0px solid var(--border-color);
+    padding: 0px!important;
+}

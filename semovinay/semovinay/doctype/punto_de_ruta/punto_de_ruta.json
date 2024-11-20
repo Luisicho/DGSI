@@ -1,0 +1,64 @@
+{
+    "actions": [],
+    "autoname": "autoincrement",
+    "creation": "2022-10-11 10:50:32.890903",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+     "ubicaci\u00f3n",
+     "municipio",
+     "fecha",
+     "destino_final",
+     "mapa"
+    ],
+    "fields": [
+     {
+      "fieldname": "ubicaci\u00f3n",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Ubicaci\u00f3n",
+      "reqd": 1
+     },
+     {
+      "fieldname": "municipio",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Municipio",
+      "options": "Municipio",
+      "reqd": 1
+     },
+     {
+      "fieldname": "fecha",
+      "fieldtype": "Date",
+      "in_list_view": 1,
+      "label": "Fecha",
+      "reqd": 1
+     },
+     {
+      "default": "0",
+      "fieldname": "destino_final",
+      "fieldtype": "Check",
+      "in_list_view": 1,
+      "label": "Destino final"
+     },
+     {
+      "fieldname": "mapa",
+      "fieldtype": "Geolocation",
+      "label": "Mapa"
+     }
+    ],
+    "index_web_pages_for_search": 1,
+    "istable": 1,
+    "links": [],
+    "modified": "2022-11-07 13:57:23.386756",
+    "modified_by": "Administrator",
+    "module": "SEMOVINAY",
+    "name": "Punto de ruta",
+    "naming_rule": "Autoincrement",
+    "owner": "Administrator",
+    "permissions": [],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
+   }

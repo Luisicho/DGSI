@@ -1,0 +1,214 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"xx1dcrDkVd\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Encabezado\",\"col\":12}},{\"id\":\"7msV9Xlfb2\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"AAzPfOQea9\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Servicio p\u00fablico</span>\",\"col\":12}},{\"id\":\"4cJ1M9mCr3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Permisos\",\"col\":3}},{\"id\":\"7_Yifjb7qt\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Permisionario\",\"col\":3}},{\"id\":\"JUdp-tLJLw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Veh\u00edculo\",\"col\":3}},{\"id\":\"Z0wzd5eel4\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Cat\u00e1logos</b></span>\",\"col\":12}},{\"id\":\"Uypmz5DOsp\",\"type\":\"card\",\"data\":{\"card_name\":\"Veh\u00edculo\",\"col\":4}},{\"id\":\"0hRMAQwDjN\",\"type\":\"card\",\"data\":{\"card_name\":\"Permisos\",\"col\":4}},{\"id\":\"1a82jM1A_V\",\"type\":\"card\",\"data\":{\"card_name\":\"Otros\",\"col\":4}},{\"id\":\"oXBW7UeU9u\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"1YNdfJYXYx\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Pie Pagina\",\"col\":12}}]",
+ "creation": "2023-10-18 15:14:13.395007",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Pie Pagina",
+   "label": "Pie Pagina"
+  },
+  {
+   "custom_block_name": "Encabezado",
+   "label": "Encabezado"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "link-url",
+ "idx": 1,
+ "is_hidden": 0,
+ "label": "Servicio P\u00fablico",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Otros",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Estados",
+   "link_count": 0,
+   "link_to": "Estado",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Municipios",
+   "link_count": 0,
+   "link_to": "Municipio",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asentamientos",
+   "link_count": 0,
+   "link_to": "Asentamiento",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Veh\u00edculo",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Claves vehiculares",
+   "link_count": 0,
+   "link_to": "Clave vehicular",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Documento registro",
+   "link_count": 0,
+   "link_to": "Documento registro",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Aseguradoras",
+   "link_count": 0,
+   "link_to": "Aseguradora",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Colores",
+   "link_count": 0,
+   "link_to": "Color vehiculo",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Permisos",
+   "link_count": 6,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Modalidad de permiso",
+   "link_count": 0,
+   "link_to": "Modalidad permiso",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Rutas",
+   "link_count": 0,
+   "link_to": "Ruta",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sitios",
+   "link_count": 0,
+   "link_to": "Sitio",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Organizaciones",
+   "link_count": 0,
+   "link_to": "Organizacion",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Funcionarios",
+   "link_count": 0,
+   "link_to": "Funcionario",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Nomenclatura n\u00famero econ\u00f3mico",
+   "link_count": 0,
+   "link_to": "Nomenclatura numero economico",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-08-08 12:10:22.401870",
+ "modified_by": "Administrator",
+ "module": "SEMOVINAY",
+ "name": "Servicio P\u00fablico",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 4.0,
+ "shortcuts": [
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Permisionario",
+   "link_to": "Propietario",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Veh\u00edculo",
+   "link_to": "Vehiculo",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Permisos",
+   "link_to": "Permiso",
+   "type": "DocType"
+  }
+ ],
+ "title": "Servicio P\u00fablico"
+}

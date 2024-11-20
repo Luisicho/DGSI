@@ -1,0 +1,74 @@
+{
+    "actions": [],
+    "autoname": "autoincrement",
+    "creation": "2022-10-11 16:25:51.562539",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+     "funcionario",
+     "cargo",
+     "salto_columna_1",
+     "fecha_inicio",
+     "fecha_final"
+    ],
+    "fields": [
+     {
+      "fieldname": "funcionario",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Nombre del funcionario",
+      "reqd": 1
+     },
+     {
+      "default": "GOBERNADOR CONSTITUCIONAL DEL ESTADO DE NAYARIT",
+      "fieldname": "cargo",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Cargo",
+      "reqd": 1
+     },
+     {
+      "fieldname": "fecha_inicio",
+      "fieldtype": "Date",
+      "label": "Inicio de actividades"
+     },
+     {
+      "fieldname": "fecha_final",
+      "fieldtype": "Date",
+      "label": "Final de actividades"
+     },
+     {
+      "fieldname": "salto_columna_1",
+      "fieldtype": "Column Break"
+     }
+    ],
+    "index_web_pages_for_search": 1,
+    "links": [],
+    "modified": "2022-10-11 16:28:19.434573",
+    "modified_by": "Administrator",
+    "module": "SEMOVINAY",
+    "name": "Funcionario",
+    "naming_rule": "Autoincrement",
+    "owner": "Administrator",
+    "permissions": [
+     {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+     }
+    ],
+    "show_title_field_in_link": 1,
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": [],
+    "title_field": "funcionario",
+    "track_changes": 1
+   }

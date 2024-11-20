@@ -1,0 +1,242 @@
+[
+ {
+  "clave": "9",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2009,
+  "modified": "2023-10-27 00:23:22.514943",
+  "name": "9"
+ },
+ {
+  "clave": "A",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2010,
+  "modified": "2023-10-27 00:23:22.530896",
+  "name": "A"
+ },
+ {
+  "clave": "B",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2011,
+  "modified": "2023-10-27 00:23:22.541725",
+  "name": "B"
+ },
+ {
+  "clave": "C",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2012,
+  "modified": "2023-10-27 00:23:22.552613",
+  "name": "C"
+ },
+ {
+  "clave": "D",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2013,
+  "modified": "2023-10-27 00:23:22.564584",
+  "name": "D"
+ },
+ {
+  "clave": "E",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2014,
+  "modified": "2023-10-27 00:23:22.574183",
+  "name": "E"
+ },
+ {
+  "clave": "F",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2015,
+  "modified": "2023-10-27 00:23:22.585388",
+  "name": "F"
+ },
+ {
+  "clave": "G",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2016,
+  "modified": "2023-10-27 00:23:22.595476",
+  "name": "G"
+ },
+ {
+  "clave": "H",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2017,
+  "modified": "2023-10-27 00:23:22.604803",
+  "name": "H"
+ },
+ {
+  "clave": "J",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2018,
+  "modified": "2023-10-27 00:23:22.615114",
+  "name": "J"
+ },
+ {
+  "clave": "K",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2019,
+  "modified": "2023-10-27 00:23:22.624881",
+  "name": "K"
+ },
+ {
+  "clave": "L",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2020,
+  "modified": "2023-10-27 00:23:22.634676",
+  "name": "L"
+ },
+ {
+  "clave": "M",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2021,
+  "modified": "2023-10-27 00:23:22.644589",
+  "name": "M"
+ },
+ {
+  "clave": "N",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2022,
+  "modified": "2023-10-27 00:23:22.653301",
+  "name": "N"
+ },
+ {
+  "clave": "P",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2023,
+  "modified": "2023-10-27 00:23:22.662800",
+  "name": "P"
+ },
+ {
+  "clave": "R",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2024,
+  "modified": "2023-10-27 00:23:22.673705",
+  "name": "R"
+ },
+ {
+  "clave": "S",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2025,
+  "modified": "2023-10-27 00:23:22.683895",
+  "name": "S"
+ },
+ {
+  "clave": "T",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2026,
+  "modified": "2023-10-27 00:23:22.698324",
+  "name": "T"
+ },
+ {
+  "clave": "V",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2027,
+  "modified": "2023-10-27 00:23:22.708928",
+  "name": "V"
+ },
+ {
+  "clave": "W",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2028,
+  "modified": "2023-10-27 00:23:22.718088",
+  "name": "W"
+ },
+ {
+  "clave": "X",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2029,
+  "modified": "2023-10-27 00:23:22.726981",
+  "name": "X"
+ },
+ {
+  "clave": "Y",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2030,
+  "modified": "2023-10-27 00:23:22.736534",
+  "name": "Y"
+ },
+ {
+  "clave": "1",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2001,
+  "modified": "2023-10-27 11:35:35.993334",
+  "name": "1"
+ },
+ {
+  "clave": "2",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2002,
+  "modified": "2023-10-27 11:36:07.735895",
+  "name": "2"
+ },
+ {
+  "clave": "3",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2003,
+  "modified": "2023-10-27 11:36:23.231861",
+  "name": "3"
+ },
+ {
+  "clave": "4",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2004,
+  "modified": "2023-10-27 11:37:22.189416",
+  "name": "4"
+ },
+ {
+  "clave": "5",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2005,
+  "modified": "2023-10-27 11:37:04.758453",
+  "name": "5"
+ },
+ {
+  "clave": "6",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2006,
+  "modified": "2023-10-27 11:36:46.738424",
+  "name": "6"
+ },
+ {
+  "clave": "7",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2007,
+  "modified": "2023-10-27 11:36:34.736155",
+  "name": "7"
+ },
+ {
+  "clave": "8",
+  "docstatus": 0,
+  "doctype": "Vin",
+  "modelo_anio": 2008,
+  "modified": "2023-10-27 11:35:53.286986",
+  "name": "8"
+ }
+]

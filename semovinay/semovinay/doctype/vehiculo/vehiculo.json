@@ -1,0 +1,474 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:serie",
+ "color": "6B1E1E",
+ "creation": "2023-06-02 11:41:30.738218",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "datos_generales",
+  "datos_veh\u00edculo_section",
+  "serie",
+  "ss3",
+  "modelo_anio",
+  "sc30",
+  "estatus",
+  "sc6",
+  "clave_vehicular",
+  "sc7",
+  "placa",
+  "alert_camion",
+  "alert_microbus",
+  "alert_automovil",
+  "sc10",
+  "clasificacion",
+  "sc12",
+  "marca",
+  "sc14",
+  "modelo",
+  "sc13",
+  "version",
+  "sc16",
+  "clase",
+  "colum_break",
+  "tipo",
+  "sc11",
+  "combustible",
+  "sc15",
+  "numero_motor",
+  "sc17",
+  "servicio",
+  "sc18",
+  "cilindros",
+  "sc19",
+  "color_principal",
+  "sc20",
+  "color_secundario",
+  "sc21",
+  "puertas",
+  "sc22",
+  "numero_pasajeros",
+  "section_break_wbser",
+  "unidad_carga",
+  "sc23",
+  "capacidad_carga",
+  "sc1",
+  "datos_factura",
+  "sc25",
+  "tipo_documento",
+  "sc27",
+  "fecha_documento",
+  "sc3",
+  "clave_documento",
+  "sc26",
+  "estado_origen",
+  "sc28",
+  "importe",
+  "datos_aseguradora",
+  "aseguradora",
+  "sc4",
+  "poliza",
+  "sc5",
+  "fecha_vigencia_inicial",
+  "sc29",
+  "fecha_vigencia_final"
+ ],
+ "fields": [
+  {
+   "fieldname": "datos_generales",
+   "fieldtype": "Tab Break",
+   "label": "Informaci\u00f3n General"
+  },
+  {
+   "fieldname": "serie",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Serie",
+   "length": 17,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "modelo_anio",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Modelo a\u00f1o",
+   "length": 4,
+   "reqd": 1
+  },
+  {
+   "fieldname": "placa",
+   "fieldtype": "Data",
+   "label": "Placa",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "description": "<small><p class=\"text-secondary bg-light\">[Opciones de b\u00fasqueda para la <span class=\"text-dark\"><strong>Clave vehicular</strong></span>: Marca, Modelo y Versi\u00f3n]</p></small>",
+   "fieldname": "clave_vehicular",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Clave vehicular",
+   "options": "Clave vehicular",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "clave_vehicular.modelo",
+   "fieldname": "modelo",
+   "fieldtype": "Data",
+   "label": "Modelo (L\u00ednea)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "clave_vehicular.version",
+   "fieldname": "version",
+   "fieldtype": "Data",
+   "label": "Versi\u00f3n",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "clase",
+   "fieldtype": "Select",
+   "label": "Clase",
+   "options": "AUTOM\u00d3VIL\nCAMI\u00d3N\nMICROBUS",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "tipo",
+   "fieldtype": "Select",
+   "label": "Tipo",
+   "options": "SEDAN\nSEDANETA\nCOUPE\nGUAYIN\nPICK UP\nREDILAS\nESTACAS\nVOLTEO\nPENAL\nPLATAFORMA\nGRUA\nTANDEN\nPIPA\nOMNIBUS\nAUTOB\u00daS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "colum_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "color_principal",
+   "fieldtype": "Link",
+   "label": "Color principal",
+   "options": "Color vehiculo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "color_secundario",
+   "fieldtype": "Link",
+   "label": "Color secundario",
+   "options": "Color vehiculo"
+  },
+  {
+   "fieldname": "numero_motor",
+   "fieldtype": "Data",
+   "label": "N\u00famero de motor",
+   "length": 25,
+   "reqd": 1
+  },
+  {
+   "fieldname": "cilindros",
+   "fieldtype": "Select",
+   "label": "Cilindros",
+   "options": "3\n4\n5\n6\n8"
+  },
+  {
+   "fieldname": "numero_pasajeros",
+   "fieldtype": "Int",
+   "label": "N\u00famero de pasajeros",
+   "length": 3
+  },
+  {
+   "fieldname": "unidad_carga",
+   "fieldtype": "Select",
+   "label": "Unidad de carga",
+   "options": "PASAJEROS\nKILOGRAMOS\nTONELADAS\nLITROS"
+  },
+  {
+   "fieldname": "capacidad_carga",
+   "fieldtype": "Int",
+   "label": "Capacidad de carga"
+  },
+  {
+   "fieldname": "puertas",
+   "fieldtype": "Select",
+   "label": "Puertas",
+   "options": "2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "datos_factura",
+   "fieldtype": "Section Break",
+   "label": "Datos Factura"
+  },
+  {
+   "fieldname": "tipo_documento",
+   "fieldtype": "Select",
+   "label": "Tipo documento",
+   "options": "FACTURA DE ORIGEN\nCARTA FACTURA\nREFACTURACI\u00d3N",
+   "reqd": 1
+  },
+  {
+   "fieldname": "clave_documento",
+   "fieldtype": "Data",
+   "label": "Clave documento (Folio)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_documento",
+   "fieldtype": "Date",
+   "label": "Fecha documento",
+   "reqd": 1
+  },
+  {
+   "fieldname": "combustible",
+   "fieldtype": "Select",
+   "label": "Combustible",
+   "options": "GASOLINA\nDIESEL\nGAS L.P.\nEL\u00c9CTRICO\nH\u00cdBRIDOS"
+  },
+  {
+   "fieldname": "datos_aseguradora",
+   "fieldtype": "Section Break",
+   "label": "Datos aseguradora"
+  },
+  {
+   "fieldname": "aseguradora",
+   "fieldtype": "Link",
+   "label": "Aseguradora",
+   "options": "Aseguradora",
+   "reqd": 1
+  },
+  {
+   "fieldname": "poliza",
+   "fieldtype": "Data",
+   "label": "Folio p\u00f3liza",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_vigencia_inicial",
+   "fieldtype": "Date",
+   "label": "Fecha vigencia inicial",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_vigencia_final",
+   "fieldtype": "Date",
+   "label": "Fecha vigencia final",
+   "reqd": 1
+  },
+  {
+   "fieldname": "importe",
+   "fieldtype": "Currency",
+   "label": "Importe",
+   "non_negative": 1,
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estado_origen",
+   "fieldtype": "Link",
+   "label": "Entidad Fed. de la agencia",
+   "options": "Estado",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "clave_vehicular.clasificacion",
+   "fieldname": "clasificacion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Clasificaci\u00f3n",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "clave_vehicular.empresa",
+   "fieldname": "marca",
+   "fieldtype": "Data",
+   "label": "Empresa (Marca)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "servicio",
+   "fieldtype": "Select",
+   "label": "Servicio",
+   "options": "P\u00daBLICO\nPRIVADO",
+   "read_only": 1
+  },
+  {
+   "fieldname": "alert_automovil",
+   "fieldtype": "HTML",
+   "options": "<small><p class=\"text-secondary bg-light\">[Nomenclatura para la <strong><span class=\"text-dark\"> Placa</span></strong> del tipo de clase<span class=\"text-dark\"><strong> AUTOM\u00d3VIL</strong></span> es la siguiente:<br><span class=\"text-success\">10-00-MDA/99-99-MJZ \u00f3 A-001-MDA/A-999-MDK</span>]</p></small>"
+  },
+  {
+   "fieldname": "alert_camion",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "options": "<small><p class=\"text-secondary bg-light\">[Nomenclatura para la<strong><span class=\"text-dark\"> Placa </span></strong>del tipo de clase <strong><span class=\"text-dark\">CAMI\u00d3N</span></strong> es la siguiente:<br><span class=\"text-success\"> 1-PAA-100/9-RFZ-999 \u00f3 1-PFA-01A/2-PFA-99A</span>]</p></small>"
+  },
+  {
+   "fieldname": "alert_microbus",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "options": "<small><p class=\"text-secondary bg-light\">[Nomenclatura para la <strong><span class=\"text-dark\"> Placa </span></strong>del tipo de clase<span class=\"text-dark\"><strong> MICROBUS</strong></span> es la siguiente:<br><span class=\"text-success\">149-000-P/730-999-R \u00f3 A-7300-P/A-74499-P</span>]</p></small>"
+  },
+  {
+   "fieldname": "sc1",
+   "fieldtype": "Tab Break",
+   "label": "Informaci\u00f3n Complementaria"
+  },
+  {
+   "fieldname": "sc3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ss3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_wbser",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "datos_veh\u00edculo_section",
+   "fieldtype": "Section Break",
+   "label": "Datos Veh\u00edculo"
+  },
+  {
+   "default": "Activo",
+   "fieldname": "estatus",
+   "fieldtype": "Select",
+   "label": "Estatus del veh\u00edculo",
+   "options": "Activo\nBaja",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sc30",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-13 14:48:12.018288",
+ "modified_by": "Administrator",
+ "module": "SEMOVINAY",
+ "name": "Vehiculo",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "serie,placa",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "serie",
+ "translated_doctype": 1
+}

@@ -1,0 +1,454 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:rfc",
+ "creation": "2023-05-26 09:37:52.425921",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "datos_generales",
+  "tipo_persona",
+  "sc25",
+  "rfc",
+  "column_break_ovsrp",
+  "curp",
+  "sc2",
+  "genero",
+  "sc3",
+  "razon_social",
+  "column_break_fgvkw",
+  "nombre_completo",
+  "section_break_f7s4k",
+  "representante",
+  "ss10",
+  "nombre",
+  "sc4",
+  "apellido_paterno",
+  "sc5",
+  "apellido_materno",
+  "sc6",
+  "status",
+  "sc7",
+  "sc10",
+  "correo_electronico",
+  "sc8",
+  "telefono_fijo",
+  "sc11",
+  "extension",
+  "sc12",
+  "telefono_movil",
+  "sc13",
+  "tipo_identificacion",
+  "sc14",
+  "clave_identificacion",
+  "column_break_tuypk",
+  "imagen",
+  "section_break_zwb0n",
+  "column_break_x3jqw",
+  "tipo_vialidad",
+  "sc15",
+  "nombre_vialidad",
+  "sc16",
+  "numero_exterior",
+  "sc17",
+  "numero_interior",
+  "sc18",
+  "inciso",
+  "sc19",
+  "entre_calle1",
+  "sc20",
+  "entre_calle2",
+  "column_break_qtwcd",
+  "referencia",
+  "sc21",
+  "codigo_postal",
+  "sc22",
+  "estado",
+  "sc23",
+  "municipio",
+  "sc24",
+  "nombre_asentamiento",
+  "column_break_m6txq",
+  "colonia"
+ ],
+ "fields": [
+  {
+   "fieldname": "tipo_persona",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tipo de persona",
+   "options": "F\u00cdSICA\nMORAL",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "rfc",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RFC",
+   "length": 13,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "curp",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "CURP",
+   "length": 18
+  },
+  {
+   "fieldname": "genero",
+   "fieldtype": "Select",
+   "label": "G\u00e9nero",
+   "options": "HOMBRE\nMUJER\nNO BINARIO"
+  },
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "label": "Nombre",
+   "length": 20,
+   "reqd": 1
+  },
+  {
+   "fieldname": "apellido_paterno",
+   "fieldtype": "Data",
+   "label": "Apellido paterno",
+   "length": 20,
+   "reqd": 1
+  },
+  {
+   "fieldname": "apellido_materno",
+   "fieldtype": "Data",
+   "label": "Apellido materno",
+   "length": 20
+  },
+  {
+   "fieldname": "razon_social",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Raz\u00f3n social"
+  },
+  {
+   "fieldname": "tipo_vialidad",
+   "fieldtype": "Select",
+   "label": "Tipo vialidad",
+   "options": "CALLE\nAVENIDA\nBOULEVARD\nANDADOR\nPROLONGACI\u00d3N\nCALZADA\nPRIVADA\nPERIF\u00c9RICO\nLIBRAMIENTO\nAUTOPISTA\nCARRETERA",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nombre_vialidad",
+   "fieldtype": "Data",
+   "label": "Nombre vialidad",
+   "length": 30,
+   "reqd": 1
+  },
+  {
+   "fieldname": "numero_exterior",
+   "fieldtype": "Data",
+   "label": "N\u00famero exterior",
+   "length": 6,
+   "reqd": 1
+  },
+  {
+   "fieldname": "numero_interior",
+   "fieldtype": "Data",
+   "label": "N\u00famero interior",
+   "length": 8
+  },
+  {
+   "fieldname": "inciso",
+   "fieldtype": "Data",
+   "label": "Inciso",
+   "length": 8
+  },
+  {
+   "fieldname": "entre_calle1",
+   "fieldtype": "Data",
+   "label": "Entre calle 1",
+   "length": 30
+  },
+  {
+   "fieldname": "entre_calle2",
+   "fieldtype": "Data",
+   "label": "Entre calle 2",
+   "length": 30
+  },
+  {
+   "fieldname": "referencia",
+   "fieldtype": "Data",
+   "label": "Referencia",
+   "length": 200
+  },
+  {
+   "fieldname": "codigo_postal",
+   "fieldtype": "Link",
+   "label": "C\u00f3digo postal",
+   "options": "Asentamiento",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "codigo_postal.nombre_estado",
+   "fieldname": "estado",
+   "fieldtype": "Data",
+   "label": "Estado",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "codigo_postal.nombre_municipio",
+   "fieldname": "municipio",
+   "fieldtype": "Data",
+   "label": "Municipio",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "codigo_postal.nombre_asentamiento",
+   "fieldname": "nombre_asentamiento",
+   "fieldtype": "Data",
+   "label": "Nombre asentamiento",
+   "read_only": 1
+  },
+  {
+   "fieldname": "correo_electronico",
+   "fieldtype": "Data",
+   "label": "Correo electr\u00f3nico",
+   "options": "Email"
+  },
+  {
+   "fieldname": "telefono_fijo",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono fijo",
+   "length": 10
+  },
+  {
+   "fieldname": "extension",
+   "fieldtype": "Data",
+   "label": "Extensi\u00f3n"
+  },
+  {
+   "fieldname": "telefono_movil",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono m\u00f3vil",
+   "length": 10
+  },
+  {
+   "fieldname": "datos_generales",
+   "fieldtype": "Section Break",
+   "label": "Informaci\u00f3n General"
+  },
+  {
+   "fieldname": "column_break_qtwcd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clave_identificacion",
+   "fieldtype": "Data",
+   "label": "Clave de identificaci\u00f3n",
+   "length": 20,
+   "reqd": 1
+  },
+  {
+   "fieldname": "imagen",
+   "fieldtype": "Attach Image",
+   "label": "Im\u00e1gen identificaci\u00f3n"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Estatus",
+   "options": "ACTIVO\nINACTIVO"
+  },
+  {
+   "fieldname": "tipo_identificacion",
+   "fieldtype": "Select",
+   "label": "Tipo identificaci\u00f3n",
+   "options": "CREDENCIAL INE\nPASAPORTE\nCEDULA PROFESIONAL\nACTA CONSTITUTIVA/INE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nombre_completo",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Nombre Completo",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "codigo_postal.colonia",
+   "fieldname": "colonia",
+   "fieldtype": "Data",
+   "label": "Colonia",
+   "read_only": 1
+  },
+  {
+   "fieldname": "representante",
+   "fieldtype": "HTML",
+   "options": "<div style=\"text-align: center; color: #cca352!important;\"><strong>Datos del representante</strong></div>"
+  },
+  {
+   "fieldname": "column_break_ovsrp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc7",
+   "fieldtype": "Section Break",
+   "label": "Datos de Contacto"
+  },
+  {
+   "fieldname": "sc8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tuypk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_x3jqw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fgvkw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_f7s4k",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_m6txq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ss10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_zwb0n",
+   "fieldtype": "Section Break",
+   "label": "Domicilio Particular"
+  },
+  {
+   "fieldname": "sc25",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "image_field": "imagen",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Permiso",
+   "link_fieldname": "permisionario"
+  }
+ ],
+ "modified": "2024-03-19 11:26:22.986959",
+ "modified_by": "Administrator",
+ "module": "SEMOVINAY",
+ "name": "Propietario",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "rfc, razon_social",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "rfc",
+ "translated_doctype": 1
+}

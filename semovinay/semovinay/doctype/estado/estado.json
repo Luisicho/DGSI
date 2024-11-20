@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:id_estado",
+ "creation": "2023-05-08 11:23:40.836031",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id_estado",
+  "nombre_estado",
+  "abreviatura"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombre_estado",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre del estado",
+   "length": 30,
+   "reqd": 1
+  },
+  {
+   "fieldname": "abreviatura",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre abreviado"
+  },
+  {
+   "fieldname": "id_estado",
+   "fieldtype": "Data",
+   "label": "clave",
+   "length": 2,
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-30 23:02:34.021618",
+ "modified_by": "Administrator",
+ "module": "SEMOVINAY",
+ "name": "Estado",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "id_estado,nombre_estado",
+ "show_title_field_in_link": 1,
+ "sort_field": "id_estado",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "nombre_estado",
+ "translated_doctype": 1
+}

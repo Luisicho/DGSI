@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:modalidad",
+ "creation": "2022-10-10 12:05:03.259795",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "categoria",
+  "sc1",
+  "modalidad_categoria",
+  "sc2",
+  "modalidad",
+  "clasificacion"
+ ],
+ "fields": [
+  {
+   "fieldname": "modalidad",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Modalidad",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "categoria",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Categor\u00eda",
+   "options": "\nRUTA\nSITIO\nCARGA\nTURISMO\nLIBRE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "modalidad_categoria",
+   "fieldtype": "Read Only",
+   "label": "Modalidad y categor\u00eda"
+  },
+  {
+   "fieldname": "sc1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clasificacion",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Clasificacion"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-06 16:11:53.179331",
+ "modified_by": "Administrator",
+ "module": "SEMOVINAY",
+ "name": "Modalidad permiso",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "categoria",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "modalidad"
+}

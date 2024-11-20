@@ -1,0 +1,15 @@
+<!-- templates/emails/Foliomail.html -->
+<div>
+    <div class="gray-container text-center">
+    <div>
+            {% for person in birthday_persons %}
+                {% if person.Serie  %}
+                    <img src="{{ person.Serie }}" title="{{ person.Serie }}"/> 
+                {% endif %}
+            {% endfor %}
+        </div>
+    <div style="margin-top: 15px;">
+    <span>{{ reminder_text }}</span>
+    <p class="text-muted">{{ message }}</p>
+    </div>
+    </div>

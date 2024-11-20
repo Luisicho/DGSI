@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<div>\n    <img src=\"/assets/semovinay/images/membrete3.png\" width=\"1000\"> \n</div>",
+  "modified": "2023-11-01 13:29:54.374508",
+  "name": "Encabezado",
+  "private": 0,
+  "roles": [],
+  "script": null,
+  "style": null
+ }
+]

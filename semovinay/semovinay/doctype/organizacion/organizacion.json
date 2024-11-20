@@ -1,0 +1,252 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2022-11-28 13:58:48.701739",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_generales",
+  "nombre_organizacion",
+  "presidente",
+  "secretario",
+  "sc1",
+  "correo_electronico",
+  "telefono",
+  "ss",
+  "gestor",
+  "tab_domiclio",
+  "codigo_postal",
+  "sc2",
+  "tipo_asentamiento",
+  "sc3",
+  "nombre_asentamiento",
+  "sc4",
+  "municipio",
+  "sc5",
+  "estado",
+  "divisor",
+  "sc6",
+  "sc7",
+  "nombre_vialidad",
+  "sc8",
+  "numero_exterior",
+  "sc9",
+  "numero_interior",
+  "section_break_554jv",
+  "inciso",
+  "sc10",
+  "entre_calle_1",
+  "sc11",
+  "entre_calle_2",
+  "sc12",
+  "referencia"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombre_organizacion",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nombre organizaci\u00f3n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "presidente",
+   "fieldtype": "Data",
+   "label": "Presidente"
+  },
+  {
+   "fieldname": "secretario",
+   "fieldtype": "Data",
+   "label": "Secretario"
+  },
+  {
+   "fetch_from": "codigo_postal.nombre_estado",
+   "fieldname": "estado",
+   "fieldtype": "Read Only",
+   "label": "Estado"
+  },
+  {
+   "fetch_from": "codigo_postal.nombre_municipio",
+   "fieldname": "municipio",
+   "fieldtype": "Read Only",
+   "label": "Municipio"
+  },
+  {
+   "fetch_from": "codigo_postal.tipo_asentamiento",
+   "fieldname": "tipo_asentamiento",
+   "fieldtype": "Read Only",
+   "label": "Tipo de asentamiento"
+  },
+  {
+   "fieldname": "nombre_vialidad",
+   "fieldtype": "Data",
+   "label": "Nombre de la vialidad"
+  },
+  {
+   "fieldname": "numero_exterior",
+   "fieldtype": "Data",
+   "label": "N\u00famero exterior"
+  },
+  {
+   "fieldname": "numero_interior",
+   "fieldtype": "Data",
+   "label": "N\u00famero interior"
+  },
+  {
+   "fieldname": "inciso",
+   "fieldtype": "Data",
+   "label": "Inciso"
+  },
+  {
+   "fieldname": "entre_calle_1",
+   "fieldtype": "Data",
+   "label": "Entre calle 1"
+  },
+  {
+   "fieldname": "referencia",
+   "fieldtype": "Data",
+   "label": "Referencia"
+  },
+  {
+   "fieldname": "correo_electronico",
+   "fieldtype": "Data",
+   "label": "Correo electr\u00f3nico",
+   "options": "Email"
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono",
+   "width": "10"
+  },
+  {
+   "fieldname": "tab_domiclio",
+   "fieldtype": "Tab Break",
+   "label": "Datos del domicilio"
+  },
+  {
+   "fieldname": "gestor",
+   "fieldtype": "Table",
+   "label": "Gestor",
+   "options": "Gestores Organizacion"
+  },
+  {
+   "fieldname": "tab_generales",
+   "fieldtype": "Tab Break",
+   "label": "Datos generales"
+  },
+  {
+   "fieldname": "entre_calle_2",
+   "fieldtype": "Data",
+   "label": "Entre calle 2"
+  },
+  {
+   "fetch_from": "codigo_postal.nombre_asentamiento",
+   "fieldname": "nombre_asentamiento",
+   "fieldtype": "Read Only",
+   "label": "Colonia / Asentamiento"
+  },
+  {
+   "fieldname": "divisor",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "codigo_postal",
+   "fieldtype": "Link",
+   "label": "C\u00f3digo postal",
+   "options": "Asentamiento"
+  },
+  {
+   "fieldname": "ss",
+   "fieldtype": "Section Break",
+   "label": "Lista de Gestores"
+  },
+  {
+   "fieldname": "sc5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc6",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tipo de vialidad",
+   "options": "CALLE\nAVENIDA\nBOULEVARD\nANDADOR\nPROLONGACI\u00d3N\nCALZADA\nPRIVADA\nPERIF\u00c9RICO\nLIBRAMIENTO\nAUTOPISTA\nCARRETERA"
+  },
+  {
+   "fieldname": "sc7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_554jv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc12",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-13 13:14:34.401287",
+ "modified_by": "Administrator",
+ "module": "SEMOVINAY",
+ "name": "Organizacion",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nombre_organizacion"
+}

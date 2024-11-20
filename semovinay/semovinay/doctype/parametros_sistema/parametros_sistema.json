@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-19 14:37:45.408106",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "folio_tramite",
+  "folio_formato_unico",
+  "anio",
+  "firma_formatos",
+  "puesto_firma_formatos"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "folio_formato_unico",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Folio formato unico",
+   "reqd": 1
+  },
+  {
+   "fieldname": "anio",
+   "fieldtype": "Int",
+   "label": "A\u00f1o"
+  },
+  {
+   "default": "0",
+   "fieldname": "folio_tramite",
+   "fieldtype": "Int",
+   "label": "Folio tramite"
+  },
+  {
+   "fieldname": "firma_formatos",
+   "fieldtype": "Data",
+   "label": "Firma formatos"
+  },
+  {
+   "fieldname": "puesto_firma_formatos",
+   "fieldtype": "Data",
+   "label": "Puesto firma formatos"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-02-25 13:34:46.748999",
+ "modified_by": "Administrator",
+ "module": "SEMOVINAY",
+ "name": "Parametros Sistema",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

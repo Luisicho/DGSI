@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include semovinay *.css
+recursive-include semovinay *.csv
+recursive-include semovinay *.html
+recursive-include semovinay *.ico
+recursive-include semovinay *.js
+recursive-include semovinay *.json
+recursive-include semovinay *.md
+recursive-include semovinay *.png
+recursive-include semovinay *.py
+recursive-include semovinay *.svg
+recursive-include semovinay *.txt
+recursive-exclude semovinay *.pyc

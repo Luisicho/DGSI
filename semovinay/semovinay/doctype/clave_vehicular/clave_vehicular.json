@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:clave",
+ "creation": "2022-10-10 13:27:24.541584",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "clave",
+  "id_clasificacion",
+  "sc2",
+  "id_empresa",
+  "sc3",
+  "id_modelo",
+  "sc4",
+  "id_version",
+  "ss1",
+  "empresa",
+  "modelo",
+  "sc1",
+  "version",
+  "clasificacion"
+ ],
+ "fields": [
+  {
+   "fieldname": "clave",
+   "fieldtype": "Data",
+   "label": "Clave",
+   "length": 7,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "id_clasificacion",
+   "fieldtype": "Data",
+   "label": "Clave clasificaci\u00f3n",
+   "length": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "id_empresa",
+   "fieldtype": "Data",
+   "label": "Clave empresa",
+   "length": 2,
+   "reqd": 1
+  },
+  {
+   "fieldname": "id_modelo",
+   "fieldtype": "Data",
+   "label": "Clave modelo",
+   "length": 2,
+   "reqd": 1
+  },
+  {
+   "fieldname": "id_version",
+   "fieldtype": "Data",
+   "label": "Clave versi\u00f3n",
+   "length": 2,
+   "reqd": 1
+  },
+  {
+   "fieldname": "empresa",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Empresa",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "modelo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Modelo",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "version",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Versi\u00f3n",
+   "length": 255,
+   "reqd": 1
+  },
+  {
+   "fieldname": "clasificacion",
+   "fieldtype": "Data",
+   "label": "Clasificaci\u00f3n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sc1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ss1",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-28 13:49:20.320907",
+ "modified_by": "Administrator",
+ "module": "SEMOVINAY",
+ "name": "Clave vehicular",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "modelo, version, empresa",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

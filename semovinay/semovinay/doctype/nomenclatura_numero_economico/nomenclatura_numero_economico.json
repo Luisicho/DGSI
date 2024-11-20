@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:prefijo",
+ "creation": "2023-10-09 23:37:46.394906",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "prefijo",
+  "municipio",
+  "abreviatura",
+  "modalidad_permiso",
+  "consecutivo"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "prefijo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Prefijo",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "municipio",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Municipio",
+   "options": "Municipio",
+   "reqd": 1
+  },
+  {
+   "fieldname": "abreviatura",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Abreviatura",
+   "length": 2,
+   "reqd": 1
+  },
+  {
+   "fieldname": "modalidad_permiso",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Modalidad",
+   "options": "Modalidad permiso",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "consecutivo",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Consecutivo"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-31 14:43:54.401599",
+ "modified_by": "Administrator",
+ "module": "SEMOVINAY",
+ "name": "Nomenclatura numero economico",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "modalidad_permiso, abreviatura",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "prefijo"
+}

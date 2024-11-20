@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2022-10-11 10:51:33.575764",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ruta",
+  "sc1",
+  "municipio",
+  "ss1",
+  "puntos_ruta",
+  "activa"
+ ],
+ "fields": [
+  {
+   "fieldname": "ruta",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre de la ruta",
+   "reqd": 1
+  },
+  {
+   "fieldname": "puntos_ruta",
+   "fieldtype": "Table",
+   "label": "Puntos de ruta",
+   "options": "Punto de ruta"
+  },
+  {
+   "default": "1",
+   "fieldname": "activa",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Ruta activa"
+  },
+  {
+   "fieldname": "municipio",
+   "fieldtype": "Link",
+   "label": "Municipio",
+   "options": "Municipio",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sc1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ss1",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-09 14:26:28.372379",
+ "modified_by": "Administrator",
+ "module": "SEMOVINAY",
+ "name": "Ruta",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "ruta, municipio",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "ruta"
+}
